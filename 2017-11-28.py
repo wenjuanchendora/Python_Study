@@ -2,6 +2,9 @@
 Python 练习_01
 date: 2017-11-28
 """
+
+# 算数运算符
+
 a = 21
 b = 10
 c = 0
@@ -33,6 +36,9 @@ c = a//b
 print ("Line 7 - Value of c is", c)
 
 
+
+# 比较运算符
+
 a = 21
 b = 10
 c = 0
@@ -46,7 +52,8 @@ if (a != b):
     print ("Line 2 - a is not equal to b")
 else:
     print ("Line 2 - a is equal to b")
-    
+
+# python3 不支持 "<>"
 # if (a <> b):
 #     print ("Line 3 - a is not equal to b")
 # else:
@@ -78,6 +85,8 @@ else:
 
 
 
+# 赋值运算符
+
 a = 21
 b = 10
 c = 0
@@ -106,6 +115,8 @@ print ("Line 7 - Value of c is", c)
 
 
 
+# 位运算符
+
 a = 60              # 60 = 0011 1100
 b = 13              # 13 = 0000 1101
 c = 0
@@ -129,6 +140,8 @@ c = a >> 2
 print ("Line 6 - Value of c is", c)
 
 
+
+# 逻辑运算符
 
 a = 10
 b = 20
@@ -159,3 +172,77 @@ if not(a and b):
     print ("Line 5 - a and b are true")
 else:
     print ("Line 5 - either a is not true or b is not true")
+
+
+
+# 成员运算符
+
+a = 10
+b = 20
+list = [1, 2, 3, 4, 5 ];
+ 
+if ( a in list ):
+   print ("1 - a is in list")
+else:
+   print ("1 - a is in not list")
+ 
+if ( b not in list ):
+   print ("2 - b is not in list")
+else:
+   print ("2 - b is in list")
+ 
+a = 2
+if ( a in list ):
+   print ("3 - a is in list")
+else:
+   print ("3 - a is not in list")
+
+
+
+# 身份运算符
+
+a = 20
+b = 20
+ 
+if ( a is b ):
+   print ("1 - a and b have same identity")
+else:
+   print ("1 - a and b do not have same identity")
+ 
+if ( id(a) == id(b) ):
+   print ("2 - a and b have same identity")
+else:
+   print ("2 - a and b do not have same identity")
+ 
+b = 30
+if ( a is b ):
+   print ("3 - a and b have same identity")
+else:
+   print ("3 - a and b do not have same identity")
+ 
+if ( a is not b ):
+   print ("4 - a and b do not have same identity")
+else:
+   print ("4 - a and b have same identity")
+
+
+
+# 运算符优先级
+
+a = 20
+b = 10
+c = 15
+d = 5
+e = 0
+ 
+e = (a + b) * c / d       #( 30 * 15 ) / 5
+print ("(a + b) * c / d is ",  e)
+ 
+e = ((a + b) * c) / d     # (30 * 15 ) / 5
+print ("((a + b) * c) / d is ",  e)
+ 
+e = (a + b) * (c / d);    # (30) * (15/5)
+print ("(a + b) * (c / d) is ",  e)
+ 
+e = a + (b * c) / d;      #  20 + (150/5)
+print ("a + (b * c) / d is ",  e)

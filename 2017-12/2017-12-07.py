@@ -26,14 +26,14 @@ dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First', 'Age': 9}
 # print(dict.items())
 # print(dict.keys())
 # print(dict.values())
-# dict.setdefault('Name')
+# print(dict.setdefault('Name'))    # setdefault 作用类似于 get
 # dict.setdefault('Address', 'China')
 # print(dict)
 # dict.update(nums)
 # print(dict)
 # dict.pop('Name')
 # print(dict)
-print(dict.popitem())
+# print(dict.popitem())
 print(dict)
 
 

@@ -56,6 +56,7 @@ obj = ["four", "five"]
 # list.pop(1)
 # print(list)
 # list.remove(599)
+# del list1[1]
 # print(list)
 # list.reverse()
 # print(list)

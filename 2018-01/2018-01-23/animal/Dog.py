@@ -1,0 +1,3 @@
+import animal
+
+animal.run()
